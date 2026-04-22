@@ -4,399 +4,216 @@
 <head>
 <meta charset="UTF-8">
 <title>Danh sách phim</title>
-
 <style>
 body { font-family: Arial; background:#111; color:#fff; }
-
-h1 {
-    text-align:center;
-}
-
-.tabs {
-    text-align:center;
-    margin-bottom: 10px;
-}
-
+h1 { text-align:center; }
+.tabs { text-align:center; margin-bottom: 10px; }
 .tabs button {
-    padding: 10px 15px;
-    margin: 5px;
-    cursor: pointer;
-    border: none;
-    background: #333;
-    color: white;
-    border-radius: 5px;
+    padding: 10px 15px; margin: 5px; cursor: pointer;
+    border: none; background: #333; color: white; border-radius: 5px;
 }
-
-.tabs button:hover {
-    background: #555;
-}
-
-.tabcontent {
-    display: none;
-}
-
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.item {
-    width: 200px;
-    margin: 10px;
-    text-align: center;
-}
-
-img {
-    width: 100%;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-img:hover {
-    transform: scale(1.05);
-}
-
-p {
-    font-size: 14px;
-}
+.tabs button:hover { background: #555; }
+.tabcontent { display: none; }
+.grid { display: flex; flex-wrap: wrap; justify-content: center; }
+.item { width: 200px; margin: 10px; text-align: center; }
+img { width: 100%; border-radius: 10px; transition: 0.3s; }
+img:hover { transform: scale(1.05); }
+p { font-size: 14px; }
 </style>
-
 <script>
 function showTab(id) {
     let tabs = document.getElementsByClassName("tabcontent");
     for (let t of tabs) t.style.display = "none";
-
     document.getElementById(id).style.display = "block";
 }
-
 window.onload = function() {
     let tabs = document.getElementsByClassName("tabcontent");
-    if (tabs.length > 0) {
-        tabs[0].style.display = "block";
-    }
+    if (tabs.length > 0) tabs[0].style.display = "block";
 }
 </script>
-
 </head>
-
 <body>
-
 <h1>Danh sách phim</h1>
-
-<div class="tabs">
-<button onclick="showTab('tab0')">HH</button>
-<button onclick="showTab('tab1')">ManDoc</button>
-
+<div class="tabs"><button onclick="showTab('tab0')">Hoạt hình 22-04</button>
 </div>
-
 <div id="tab0" class="tabcontent">
 <div class="grid">
 
         <div class="item">
-            <img src="thumbs/HH_1.jpg">
-            <p>01.魔尊的药引跑路了（85集）</p>
+            <img src="thumbs/Hoạt hình 22-04_1.jpg">
+            <p>02.我在退婚宴惊艳全场（54集）</p>
         </div>
         
         <div class="item">
-            <img src="thumbs/HH_2.jpg">
-            <p>02.离婚分我一半修为，你当这里是女频？（52集）</p>
+            <img src="thumbs/Hoạt hình 22-04_2.jpg">
+            <p>03.我死后他们哭着求原谅（67集）</p>
         </div>
         
         <div class="item">
-            <img src="thumbs/HH_3.jpg">
-            <p>03.山野小福妻（55集）</p>
+            <img src="thumbs/Hoạt hình 22-04_3.jpg">
+            <p>04.惜月院长（27集）</p>
         </div>
         
         <div class="item">
-            <img src="thumbs/HH_4.jpg">
-            <p>04.一品炊事官（35集）</p>
+            <img src="thumbs/Hoạt hình 22-04_4.jpg">
+            <p>05.穿越七零，炮灰嫡女重振将门（80集）</p>
         </div>
         
         <div class="item">
-            <img src="thumbs/HH_5.jpg">
-            <p>05.逃婚后，我被哑巴夫君宠上天（61集）</p>
+            <img src="thumbs/Hoạt hình 22-04_5.jpg">
+            <p>06.顾总，太太签完离婚协议就改嫁了（44集）</p>
         </div>
         
         <div class="item">
-            <img src="thumbs/HH_6.jpg">
-            <p>06.闭关签到千年，出山已成老祖（59集）</p>
+            <img src="thumbs/Hoạt hình 22-04_6.jpg">
+            <p>07.和亲当天，我吃空了摄政王府（63集）</p>
         </div>
         
         <div class="item">
-            <img src="thumbs/HH_7.jpg">
-            <p>07.荒岁拾芳录（80集）</p>
+            <img src="thumbs/Hoạt hình 22-04_7.jpg">
+            <p>08.娇归湛心（48集）</p>
         </div>
         
         <div class="item">
-            <img src="thumbs/HH_8.jpg">
-            <p>08.桑竹一隅安平生（54集）</p>
+            <img src="thumbs/Hoạt hình 22-04_8.jpg">
+            <p>09.契约解除那天，他们都疯了（40集）</p>
         </div>
         
         <div class="item">
-            <img src="thumbs/HH_9.jpg">
-            <p>09.太子被废当天，我连夜买房跑路（30集）</p>
+            <img src="thumbs/Hoạt hình 22-04_9.jpg">
+            <p>10.团宠小师妹第二季（27集）</p>
         </div>
         
         <div class="item">
-            <img src="thumbs/HH_10.jpg">
-            <p>10.赎罪与温柔（15集）</p>
+            <img src="thumbs/Hoạt hình 22-04_10.jpg">
+            <p>11.退婚后，我成了陛下心尖宠（70集）</p>
         </div>
         
         <div class="item">
-            <img src="thumbs/HH_11.jpg">
-            <p>11.偷听心声后炸翻全城（83集）</p>
+            <img src="thumbs/Hoạt hình 22-04_11.jpg">
+            <p>12.童话镇BOSS独宠我（28集）</p>
         </div>
         
         <div class="item">
-            <img src="thumbs/HH_12.jpg">
-            <p>12.捡来的三界大佬都宠我（52集）</p>
+            <img src="thumbs/Hoạt hình 22-04_12.jpg">
+            <p>13.晚来天渐雪（30集）</p>
         </div>
         
         <div class="item">
-            <img src="thumbs/HH_13.jpg">
-            <p>13.举国助我成诡僵，我靠吞噬征服末世（60集）</p>
+            <img src="thumbs/Hoạt hình 22-04_13.jpg">
+            <p>14.重生安分守己（13集）</p>
         </div>
         
         <div class="item">
-            <img src="thumbs/HH_14.jpg">
-            <p>14.我卖海鲜后发小疯了（31集）</p>
+            <img src="thumbs/Hoạt hình 22-04_14.jpg">
+            <p>15.重生后我被婆母夫君宠上天（62集）</p>
         </div>
         
         <div class="item">
-            <img src="thumbs/HH_15.jpg">
-            <p>15.亲情不是提款机（26集）</p>
+            <img src="thumbs/Hoạt hình 22-04_15.jpg">
+            <p>16.镇宅端妃不好惹（60集）</p>
         </div>
         
         <div class="item">
-            <img src="thumbs/HH_16.jpg">
-            <p>16.八十度的心动（43集）</p>
+            <img src="thumbs/Hoạt hình 22-04_16.jpg">
+            <p>17.六掌断旧尘（114集）</p>
         </div>
         
         <div class="item">
-            <img src="thumbs/HH_17.jpg">
-            <p>17.承重墙里的秘密（41集）</p>
+            <img src="thumbs/Hoạt hình 22-04_17.jpg">
+            <p>18.孕别十八载，携子归京华（76集）</p>
         </div>
         
         <div class="item">
-            <img src="thumbs/HH_18.jpg">
-            <p>18.打工的第108天，我砸了同事的饭碗（64集）</p>
+            <img src="thumbs/Hoạt hình 22-04_18.jpg">
+            <p>19.邻居的顺风车（48集）</p>
         </div>
         
         <div class="item">
-            <img src="thumbs/HH_19.jpg">
-            <p>19.彩礼换前程？我选后者亲爹慌了（102集）</p>
+            <img src="thumbs/Hoạt hình 22-04_19.jpg">
+            <p>20.科技与狠活（40集）</p>
         </div>
         
         <div class="item">
-            <img src="thumbs/HH_20.jpg">
-            <p>20.我的家园我守护（40集）</p>
+            <img src="thumbs/Hoạt hình 22-04_20.jpg">
+            <p>21.岁岁桐花安（43集）</p>
+        </div>
+        
+        <div class="item">
+            <img src="thumbs/Hoạt hình 22-04_21.jpg">
+            <p>22.十年付出，不敌偏爱（29集）</p>
+        </div>
+        
+        <div class="item">
+            <img src="thumbs/Hoạt hình 22-04_22.jpg">
+            <p>23.保镖男友是殿主（55集）</p>
+        </div>
+        
+        <div class="item">
+            <img src="thumbs/Hoạt hình 22-04_23.jpg">
+            <p>24.实习生举报公司，我强势破局（45集）</p>
+        </div>
+        
+        <div class="item">
+            <img src="thumbs/Hoạt hình 22-04_24.jpg">
+            <p>25.天生断掌又如何，我是锦鲤福妻（66集）</p>
+        </div>
+        
+        <div class="item">
+            <img src="thumbs/Hoạt hình 22-04_25.jpg">
+            <p>26.听见天师心声后，我成了全家团宠（51集）</p>
+        </div>
+        
+        <div class="item">
+            <img src="thumbs/Hoạt hình 22-04_26.jpg">
+            <p>27.众仙骗我投个好胎？行，你们别后悔！（95集）</p>
+        </div>
+        
+        <div class="item">
+            <img src="thumbs/Hoạt hình 22-04_27.jpg">
+            <p>28.神医狂妃：王爷别追了，咱俩真不熟（83集）</p>
+        </div>
+        
+        <div class="item">
+            <img src="thumbs/Hoạt hình 22-04_28.jpg">
+            <p>29.祝你余生永失所爱（51集）</p>
+        </div>
+        
+        <div class="item">
+            <img src="thumbs/Hoạt hình 22-04_29.jpg">
+            <p>30.一眼千年爱意浓（83集）</p>
+        </div>
+        
+        <div class="item">
+            <img src="thumbs/Hoạt hình 22-04_30.jpg">
+            <p>31.狂妃上线：绝色魔尊痴缠不休（81集）</p>
+        </div>
+        
+        <div class="item">
+            <img src="thumbs/Hoạt hình 22-04_31.jpg">
+            <p>32.我，在镇魔司以身饲魔（87集）</p>
+        </div>
+        
+        <div class="item">
+            <img src="thumbs/Hoạt hình 22-04_32.jpg">
+            <p>33.救赎歌王：歌尽人间暖，唯予妻与娃（100集）</p>
+        </div>
+        
+        <div class="item">
+            <img src="thumbs/Hoạt hình 22-04_33.jpg">
+            <p>34.开局为美女师尊解毒，觉醒帝路星辰（76集）</p>
+        </div>
+        
+        <div class="item">
+            <img src="thumbs/Hoạt hình 22-04_34.jpg">
+            <p>35.一枕绣莲（42集）</p>
         </div>
         
         <div class="item">
             <img src="https://via.placeholder.com/200x300?text=No+Image">
-            <p>21.天才双宝，妈咪是神医大佬（61集）</p>
+            <p>36.末日生存法则：攻略丧尸王（100集）</p>
         </div>
         </div></div>
-<div id="tab1" class="tabcontent">
-<div class="grid">
-
-        <div class="item">
-            <img src="thumbs/ManDoc_1.jpg">
-            <p>01.王妃古穿今真千金飒翻了（75集）葛修言＆张艺霖</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_2.jpg">
-            <p>02.前夫的秘密我知道（62集）古铭瀚＆黄丽婷</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_3.jpg">
-            <p>03.驯爱（80集）杨泽＆胡丹丹</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_4.jpg">
-            <p>04.又见山海（67集）王奕然&杨殊予</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_5.jpg">
-            <p>05.秦机长，太太是真的想离婚了（74集）方正男＆诗越越</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_6.jpg">
-            <p>06.育儿嫂入公府成白月光之莺鸣柳＆被扫地出门，奶娘入公府成人上人（84集）姜瑶＆叶皓然＆刘擎＆钟正</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_7.jpg">
-            <p>07.卿自云中来（60集）钢铁肉肉＆祁文婷</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_8.jpg">
-            <p>08.90年代：这家媳妇有点辣（80集）刘叁肆＆陈辞</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_9.jpg">
-            <p>09.女总裁的无敌小助理（69集）张子寒＆许子吟</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_10.jpg">
-            <p>10.带校花回家后，全村大佬藏不住了（63集）钟政＆张云蕾</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_11.jpg">
-            <p>11.她养的纨绔丈夫超乖（78集）夏志成＆张蓝月</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_12.jpg">
-            <p>12.鬼界高能！前方玄学小祖宗下山了（80集）韦若辰＆宋禧</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_13.jpg">
-            <p>13.离婚计划失败中（66集）王楠＆朱茉颜</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_14.jpg">
-            <p>14.九零小作精！随母改嫁被糙汉甜宠（80集）林佳棋＆文晴</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_15.jpg">
-            <p>15.百妖谱（80集）陈冠峄＆包金妮</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_16.jpg">
-            <p>16.开局统兵80万，马踏皇城（85集）薛滨弘＆盛佳琦</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_17.jpg">
-            <p>17.乱世荒年，我靠军火库裂土封王（106集）苗雨峤＆黎沐清</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_18.jpg">
-            <p>18.拿到洗衣液，我妈离婚了（98集）李明明＆钟文斌</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_19.jpg">
-            <p>19.逍遥小县令，我在边陲打造盛世（60集）李文君＆陈杰克</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_20.jpg">
-            <p>20.烧饼师傅，有点能打（60集）王辉＆康玥</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_21.jpg">
-            <p>21.都市：长生三万年（96集）李隆基＆涂鑫艺</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_22.jpg">
-            <p>22.系统让我当大明星：乘风破浪（82集）李俊良＆朱梦茹</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_23.jpg">
-            <p>23.直播阴缘（81集）杜宇宸＆陈思妤</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_24.jpg">
-            <p>24.三年卧床，起身即医仙（81集）郭嘉琦</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_25.jpg">
-            <p>25.宗门真千金她言出法随（84集）彭伟敏＆彭丹丹</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_26.jpg">
-            <p>26.重生把妻女宠上天，系统助我成仙（80集）刘林＆彭娜莎</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_27.jpg">
-            <p>27.相亲走错桌：相亲对象绑我结婚（81集）夏锦沫＆王也</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_28.jpg">
-            <p>28.潜龙护卫（65集）宣嘉橙＆王雅清</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_29.jpg">
-            <p>29.重生回家第一天，她清算一切（71集）静国平＆丛思涵</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_30.jpg">
-            <p>30.真龙传承，我为都市最强（103集）赵书苑＆邵迪</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_31.jpeg">
-            <p>31.爱情啊，结果都那样（69集）冯冠清&陈瑞琪</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_32.jpeg">
-            <p>32.错付十年温情后，我重燃人生（80集）李苗苗&及程微&王祉溢&朱冠苏</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_33.jpeg">
-            <p>33.虎妈重生，带三个女儿涅槃（60集）张蓓蓓&张立超</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_34.jpeg">
-            <p>34.七爷，二小姐的马甲掉不停（80集）谈芯&陈运宣</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_35.jpeg">
-            <p>35.失恋后，发现好兄弟是清冷校花（80集）王熠星&陈馨雨</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_36.jpeg">
-            <p>36.她藏起了倾城貌（60集）刘因然&杜昱泽</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_37.jpeg">
-            <p>37.她执天命（65集）理艺如&武泽衡</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_38.jpeg">
-            <p>38.透视神医混花都（80集）陈柄希&齐博然</p>
-        </div>
-        
-        <div class="item">
-            <img src="thumbs/ManDoc_39.jpeg">
-            <p>39.遗忘与记忆之秋（67集）张笑颜&海睿</p>
-        </div>
-        </div></div>
-
 
 </body>
 </html>

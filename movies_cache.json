@@ -1,6 +1,257 @@
 {
   "tabs": {
-    "HoatHinhAI": [],
+    "HoatHinhAI": [
+      {
+        "movie_folder": "01.青莲农宝（20集）",
+        "thumb": "HoatHinhAI_1.jpg",
+        "orientation": "ngang"
+      },
+      {
+        "movie_folder": "02.末世：从搬空全球仓库开始第一季（132集）",
+        "thumb": "HoatHinhAI_2.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "03.全场震惊！我唤醒了华洲众神（70集）",
+        "thumb": "HoatHinhAI_3.jpg",
+        "orientation": "ngang"
+      },
+      {
+        "movie_folder": "04.珠护珏（46集）",
+        "thumb": "HoatHinhAI_4.jpg",
+        "orientation": "ngang"
+      },
+      {
+        "movie_folder": "05.古韵奇境（93集）",
+        "thumb": "HoatHinhAI_5.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "06.魂穿废柴：从邂逅圣女开始觉醒神脉（51集）",
+        "thumb": "HoatHinhAI_6.jpg",
+        "orientation": "ngang"
+      },
+      {
+        "movie_folder": "07.我被美女姐姐拽去当神探（62集）",
+        "thumb": "HoatHinhAI_7.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "08.大巴司机的除夕泪（47集）",
+        "thumb": "HoatHinhAI_8.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "09.仙缘劫起之下山掌生死（265集）",
+        "thumb": "HoatHinhAI_9.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "10.无敌镖人，开局护送灭世帝女！（60集）",
+        "thumb": "HoatHinhAI_10.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "11.驼驼的美强惨男主（19集）",
+        "thumb": "HoatHinhAI_11.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "12.渔王狂飙：风浪越大鱼越贵（46集）",
+        "thumb": "HoatHinhAI_12.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "13.阴戾怪物怀里的娇软美人（66集）",
+        "thumb": "HoatHinhAI_13.jpg",
+        "orientation": "ngang"
+      },
+      {
+        "movie_folder": "14.月给五百，老娘不伺候了（60集）",
+        "thumb": "HoatHinhAI_14.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "15.我在副本找男友（21集）",
+        "thumb": "HoatHinhAI_15.jpg",
+        "orientation": "ngang"
+      },
+      {
+        "movie_folder": "16.开局被开除我给公司留个BUG（30集）",
+        "thumb": "HoatHinhAI_16.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "17.鬼鬼治愈（29集）",
+        "thumb": "HoatHinhAI_17.jpg",
+        "orientation": "ngang"
+      },
+      {
+        "movie_folder": "18.凤归花枝暖（78集）",
+        "thumb": "HoatHinhAI_18.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "19.都是炒粉惹的祸（36集）",
+        "thumb": "HoatHinhAI_19.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "20.安宁传：重生主母权倾侯府（49集）",
+        "thumb": "HoatHinhAI_20.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "21.捡来的老公，是我的命中注定（65集）",
+        "thumb": "HoatHinhAI_21.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "22.莲娘辞，世子情（61集）",
+        "thumb": "HoatHinhAI_22.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "23.傅先生的隐秘爱人（40集）",
+        "thumb": "HoatHinhAI_23.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "24.心声泄露后，我成了全书团宠（55集）",
+        "thumb": "HoatHinhAI_24.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "25.陛下偷听我心声（32集）",
+        "thumb": "HoatHinhAI_25.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "26.重生退婚：蛇君大人宠你无忧（61集）",
+        "thumb": "HoatHinhAI_26.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "27.穿书后，我攻略了权臣首辅（46集）",
+        "thumb": "HoatHinhAI_27.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "28.三生三世忘川岸（50集）",
+        "thumb": "HoatHinhAI_28.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "29.西游：五指山上贴瓷砖AI真人第一季（85集）",
+        "thumb": "HoatHinhAI_29.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "30.我死后第五年，疯皇帝还在招魂（61集）",
+        "thumb": "HoatHinhAI_30.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "31.满级AI的末世绿茶生存法则（30集）",
+        "thumb": "HoatHinhAI_31.jpg",
+        "orientation": "ngang"
+      },
+      {
+        "movie_folder": "32.烛九阴模板，开局猛吃圣女软饭（60集）",
+        "thumb": "HoatHinhAI_32.jpg",
+        "orientation": "ngang"
+      },
+      {
+        "movie_folder": "33.摊牌了，我有鉴宝神瞳（98集）",
+        "thumb": "HoatHinhAI_33.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "34.仙门弃徒：朕靠遣散后宫翻身成神（71集）",
+        "thumb": "HoatHinhAI_34.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "34.窥心不负君（62集）",
+        "thumb": "HoatHinhAI_35.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "35.战毒（54集）",
+        "thumb": "HoatHinhAI_36.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "36.天生易孕体，被王府老夫人抢去当世子妃（70集）",
+        "thumb": "HoatHinhAI_37.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "37.掉马现场，我的暗恋小说男主找上门（43集）",
+        "thumb": "HoatHinhAI_38.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "38.换亲亏大了夫君是锦衣卫大佬（41集）",
+        "thumb": "HoatHinhAI_39.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "39.愿她降落（99集）",
+        "thumb": "HoatHinhAI_40.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "40.留住的客人（34集）",
+        "thumb": "HoatHinhAI_41.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "41.大壮重回80（52集）",
+        "thumb": "HoatHinhAI_42.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "42.爱上心软魔尊（24集）",
+        "thumb": "HoatHinhAI_43.jpg",
+        "orientation": "ngang"
+      },
+      {
+        "movie_folder": "43.不用重生之我就是京圈小公主（25集）",
+        "thumb": "HoatHinhAI_44.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "44.心声入耳：丫鬟心声被听后我改嫁了（34集）",
+        "thumb": "HoatHinhAI_45.jpg",
+        "orientation": "ngang"
+      },
+      {
+        "movie_folder": "45.高冷仙尊爱吸猫（25集）",
+        "thumb": "HoatHinhAI_46.jpg",
+        "orientation": "ngang"
+      },
+      {
+        "movie_folder": "46.原来我才是冒牌货（29集）",
+        "thumb": "HoatHinhAI_47.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "47.剑仙降临竟是傻子姐姐（50集）",
+        "thumb": "HoatHinhAI_48.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "48.傲娇王爷独宠我（61集）",
+        "thumb": "HoatHinhAI_49.jpg",
+        "orientation": "ngang"
+      },
+      {
+        "movie_folder": "49.穿书后我抱稳男主大腿（30集）",
+        "thumb": "HoatHinhAI_50.jpg",
+        "orientation": "ngang"
+      }
+    ],
     "Phim Hot": [
       {
         "movie_folder": "01(1).情深相爱时（79集）刘宇航＆叶鑫鑫（六金yE）",
@@ -15,6 +266,26 @@
       {
         "movie_folder": "03.冤家对头竟被绑定夫妻系统（80集）王嘉懋＆柴慧欣",
         "thumb": "Phim Hot_3.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "04(2).凤还朝：妖孽王爷请让道（80集）刘润铭   &王格格",
+        "thumb": "Phim Hot_4.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "05(1).边陲往事第二部（81集）申琦＆关芯",
+        "thumb": "Phim Hot_5.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "06(1).皇后千秋（76集）朱一未&白昕怡",
+        "thumb": "Phim Hot_6.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "07.假如我年少有为不自卑（61集）詹琸＆蒋菁煜",
+        "thumb": "Phim Hot_7.jpg",
         "orientation": "dọc"
       }
     ],

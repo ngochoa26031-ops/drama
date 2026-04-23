@@ -1,7 +1,23 @@
 {
   "tabs": {
     "HoatHinhAI": [],
-    "Phim Hot": [],
+    "Phim Hot": [
+      {
+        "movie_folder": "01(1).情深相爱时（79集）刘宇航＆叶鑫鑫（六金yE）",
+        "thumb": "Phim Hot_1.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "02.皇城震惊，冷面太子有后了（80集）金玄雨＆查祎琛",
+        "thumb": "Phim Hot_2.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "03.冤家对头竟被绑定夫妻系统（80集）王嘉懋＆柴慧欣",
+        "thumb": "Phim Hot_3.jpg",
+        "orientation": "dọc"
+      }
+    ],
     "PhimNgan": [
       {
         "movie_folder": "01.凤谋：替身宦宠（80集）唐云清＆郭美林子",
@@ -249,53 +265,98 @@
         "orientation": "dọc"
       },
       {
-        "movie_folder": "4月22日",
-        "thumb": null,
-        "orientation": "unknown"
-      },
-      {
         "movie_folder": "50.拥有透视后，财源滚滚来（136集）卢艺煊&朱佳琪",
-        "thumb": "PhimNgan_51.jpg",
+        "thumb": "PhimNgan_50.jpg",
         "orientation": "dọc"
       },
       {
         "movie_folder": "51.海啸来袭，生死时速（60集）袁诗昂&杨沫",
-        "thumb": "PhimNgan_52.jpg",
+        "thumb": "PhimNgan_51.jpg",
         "orientation": "dọc"
       },
       {
         "movie_folder": "52.震惊吧！大小姐重生后带老妈原地起飞（70集）盛晨&刘念（男）&谢海燕",
-        "thumb": "PhimNgan_53.jpg",
+        "thumb": "PhimNgan_52.jpg",
         "orientation": "dọc"
       },
       {
         "movie_folder": "53.透视神眼：鉴宝赌石定乾坤（80集）贾元琪&裴亨娜",
-        "thumb": "PhimNgan_54.jpg",
+        "thumb": "PhimNgan_53.jpg",
         "orientation": "dọc"
       },
       {
         "movie_folder": "54.神乞下山，师姐个个宠我上天（63集）老迪&吕怡萱",
-        "thumb": "PhimNgan_55.jpg",
+        "thumb": "PhimNgan_54.jpg",
         "orientation": "dọc"
       },
       {
         "movie_folder": "55.不做他的公主（75集）萨钢云＆陈舒宜",
-        "thumb": "PhimNgan_56.jpg",
+        "thumb": "PhimNgan_55.jpg",
         "orientation": "dọc"
       },
       {
         "movie_folder": "56.让你演反派，没让你把这里当刑场（70集）代从＆杨宇彤",
-        "thumb": "PhimNgan_57.jpg",
+        "thumb": "PhimNgan_56.jpg",
         "orientation": "dọc"
       },
       {
         "movie_folder": "57.重启人生：守护人间温暖（80集）任艺聪＆葛宸羽",
-        "thumb": "PhimNgan_58.jpg",
+        "thumb": "PhimNgan_57.jpg",
         "orientation": "dọc"
       },
       {
         "movie_folder": "58.重回八零后，我把七个女儿宠上天（80集）李梓＆韩荣荣",
+        "thumb": "PhimNgan_58.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "59.外来媳妇专治各种不服（70集）贾凯文＆魏家",
         "thumb": "PhimNgan_59.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "60.举报我堆杂物，我反手搬走电梯（75集）张晓楠＆王晨",
+        "thumb": "PhimNgan_60.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "61.三针叩开地府门，九世转生镇鬼门（65集）梅洋＆朱珠",
+        "thumb": "PhimNgan_61.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "62.妻心如铁，我转身离婚修仙（81集）陈景霖＆陈丹",
+        "thumb": "PhimNgan_62.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "63.归来即无敌夫人请摘面纱（75集）韩金明＆方树蓝",
+        "thumb": "PhimNgan_63.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "64.闪婚后我成了房东太太（61集）徐浚恒＆陆晨林",
+        "thumb": "PhimNgan_64.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "65.太原之约（50集）林俊毅＆陈怡霏",
+        "thumb": "PhimNgan_65.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "66.假岳父真阎王（40集）雷鹏宇＆辛悦",
+        "thumb": "PhimNgan_66.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "67.以为老婆守我两年，没想到早已背叛（40集）李玺鹏＆张雨佳",
+        "thumb": "PhimNgan_67.jpg",
+        "orientation": "dọc"
+      },
+      {
+        "movie_folder": "68.我靠一碗炒饭镇住整个江湖（50集）刘翰承＆李丹妮",
+        "thumb": "PhimNgan_68.jpg",
         "orientation": "dọc"
       }
     ]

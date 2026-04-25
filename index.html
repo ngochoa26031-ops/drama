@@ -1,859 +1,1450 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-<meta charset="UTF-8">
-<title>Danh sách phim</title>
-<style>
-body { font-family: Arial; background:#111; color:#fff; margin:0; padding:20px; }
-h1 { text-align:center; }
-.tabs { text-align:center; margin-bottom: 20px; }
-.tabs button { padding: 12px 20px; margin: 5px; cursor: pointer; border: none; background: #333; color: white; border-radius: 8px; font-size:15px; }
-.tabs button:hover { background: #555; }
-.tabcontent { display: none; }
-.grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-.item { width: 220px; position: relative; text-align: center; }
-img { width: 100%; border-radius: 12px; transition: 0.3s; box-shadow: 0 4px 8px rgba(0,0,0,0.5); }
-img:hover { transform: scale(1.05); }
-p { margin: 10px 0 5px; font-size: 15px; }
-.badges { position: absolute; top: 12px; left: 12px; display: flex; flex-wrap: wrap; gap: 6px; z-index: 10; }
-.badge { padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.6); }
-.hot { background: #f00; color: #fff; }
-.sold { background: #00f; color: #fff; }
-.new { background: #0f0; color: #000; }
-.dọc { background: #ff00ff; color: #fff; }
-.ngang { background: #00ccff; color: #000; }
-</style>
-<script>
-function showTab(id) { 
-    let tabs = document.getElementsByClassName("tabcontent");
-    for (let t of tabs) t.style.display = "none";
-    document.getElementById(id).style.display = "block";
-}
-window.onload = function() { 
-    let tabs = document.getElementsByClassName("tabcontent");
-    if (tabs.length > 0) tabs[0].style.display = "block";
-}
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📸 Xem Ảnh - Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .gallery-img {
+            transition: all 0.3s ease;
+            cursor: pointer;
+            height: 240px;
+            object-fit: cover;
+        }
+        .gallery-img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .folder-header {
+            border-bottom: 3px solid #0d6efd;
+            padding-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-<h1>🎬 Danh sách phim</h1>
-<div class="tabs"><button onclick="showTab('tab0')">HoatHinhAI</button>
-<button onclick="showTab('tab1')">PhimHangNgay</button>
-<button onclick="showTab('tab2')">PhimHot</button>
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bold">📸 Bộ Sưu Tập Ảnh</h1>
+            <p class="text-muted">Click vào ảnh để xem lớn • Hỗ trợ tất cả folder ảnh</p>
+        </div>
+
+<h2 class="folder-header mt-5 mb-4">📁 HoatHinhAI 24-04 <small class="text-muted">(65 ảnh)</small></h2>
+<div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-4">
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-03fddab8d235.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-03fddab8d235.jpg', '0-03fddab8d235.jpg')" alt="0-03fddab8d235.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-03fddab8d235.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-0b6193dd0d14.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-0b6193dd0d14.jpg', '0-0b6193dd0d14.jpg')" alt="0-0b6193dd0d14.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-0b6193dd0d14.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-0f71b753db82.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-0f71b753db82.jpg', '0-0f71b753db82.jpg')" alt="0-0f71b753db82.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-0f71b753db82.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-101fb01e6e7b.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-101fb01e6e7b.jpg', '0-101fb01e6e7b.jpg')" alt="0-101fb01e6e7b.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-101fb01e6e7b.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-118c6269e2c7.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-118c6269e2c7.jpg', '0-118c6269e2c7.jpg')" alt="0-118c6269e2c7.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-118c6269e2c7.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-128fbaf3d8fb.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-128fbaf3d8fb.jpg', '0-128fbaf3d8fb.jpg')" alt="0-128fbaf3d8fb.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-128fbaf3d8fb.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-21aafeb6b1d3.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-21aafeb6b1d3.jpg', '0-21aafeb6b1d3.jpg')" alt="0-21aafeb6b1d3.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-21aafeb6b1d3.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-231a0968b7bc.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-231a0968b7bc.jpg', '0-231a0968b7bc.jpg')" alt="0-231a0968b7bc.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-231a0968b7bc.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-2471044f2b59.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-2471044f2b59.jpg', '0-2471044f2b59.jpg')" alt="0-2471044f2b59.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-2471044f2b59.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-27334e4d4d61.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-27334e4d4d61.jpg', '0-27334e4d4d61.jpg')" alt="0-27334e4d4d61.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-27334e4d4d61.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-29785c1dcda1.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-29785c1dcda1.jpg', '0-29785c1dcda1.jpg')" alt="0-29785c1dcda1.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-29785c1dcda1.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-2f9b14b312df.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-2f9b14b312df.jpg', '0-2f9b14b312df.jpg')" alt="0-2f9b14b312df.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-2f9b14b312df.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-2fc49287003c.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-2fc49287003c.jpg', '0-2fc49287003c.jpg')" alt="0-2fc49287003c.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-2fc49287003c.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-31dbb1242732.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-31dbb1242732.jpg', '0-31dbb1242732.jpg')" alt="0-31dbb1242732.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-31dbb1242732.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-3857a16f78d2.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-3857a16f78d2.jpg', '0-3857a16f78d2.jpg')" alt="0-3857a16f78d2.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-3857a16f78d2.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-39ec0e53c2ca.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-39ec0e53c2ca.jpg', '0-39ec0e53c2ca.jpg')" alt="0-39ec0e53c2ca.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-39ec0e53c2ca.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-3e830615323b.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-3e830615323b.jpg', '0-3e830615323b.jpg')" alt="0-3e830615323b.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-3e830615323b.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-3facac0fc69f.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-3facac0fc69f.jpg', '0-3facac0fc69f.jpg')" alt="0-3facac0fc69f.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-3facac0fc69f.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-4dff76c70543.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-4dff76c70543.jpg', '0-4dff76c70543.jpg')" alt="0-4dff76c70543.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-4dff76c70543.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-4f348be2de85.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-4f348be2de85.jpg', '0-4f348be2de85.jpg')" alt="0-4f348be2de85.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-4f348be2de85.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-4f4e2b1cbae4.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-4f4e2b1cbae4.jpg', '0-4f4e2b1cbae4.jpg')" alt="0-4f4e2b1cbae4.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-4f4e2b1cbae4.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-515237b7072f.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-515237b7072f.jpg', '0-515237b7072f.jpg')" alt="0-515237b7072f.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-515237b7072f.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-520d79e6207b.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-520d79e6207b.jpg', '0-520d79e6207b.jpg')" alt="0-520d79e6207b.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-520d79e6207b.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-522bd3d5d0b2.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-522bd3d5d0b2.jpg', '0-522bd3d5d0b2.jpg')" alt="0-522bd3d5d0b2.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-522bd3d5d0b2.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-545633a056c4.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-545633a056c4.jpg', '0-545633a056c4.jpg')" alt="0-545633a056c4.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-545633a056c4.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-56e9fb36981e.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-56e9fb36981e.jpg', '0-56e9fb36981e.jpg')" alt="0-56e9fb36981e.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-56e9fb36981e.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-586ff65e676e.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-586ff65e676e.jpg', '0-586ff65e676e.jpg')" alt="0-586ff65e676e.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-586ff65e676e.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-5911794e30ff.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-5911794e30ff.jpg', '0-5911794e30ff.jpg')" alt="0-5911794e30ff.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-5911794e30ff.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-5d3c21f3db33.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-5d3c21f3db33.jpg', '0-5d3c21f3db33.jpg')" alt="0-5d3c21f3db33.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-5d3c21f3db33.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-60680c5fc800.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-60680c5fc800.jpg', '0-60680c5fc800.jpg')" alt="0-60680c5fc800.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-60680c5fc800.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-6378161af0d9.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-6378161af0d9.jpg', '0-6378161af0d9.jpg')" alt="0-6378161af0d9.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-6378161af0d9.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-755d35af460f.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-755d35af460f.jpg', '0-755d35af460f.jpg')" alt="0-755d35af460f.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-755d35af460f.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-75f2c63546f6.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-75f2c63546f6.jpg', '0-75f2c63546f6.jpg')" alt="0-75f2c63546f6.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-75f2c63546f6.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-7929f32c06f6.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-7929f32c06f6.jpg', '0-7929f32c06f6.jpg')" alt="0-7929f32c06f6.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-7929f32c06f6.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-82635ef843fe.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-82635ef843fe.jpg', '0-82635ef843fe.jpg')" alt="0-82635ef843fe.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-82635ef843fe.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-82d9b0c4102a.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-82d9b0c4102a.jpg', '0-82d9b0c4102a.jpg')" alt="0-82d9b0c4102a.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-82d9b0c4102a.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-8b7173e69cbd.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-8b7173e69cbd.jpg', '0-8b7173e69cbd.jpg')" alt="0-8b7173e69cbd.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-8b7173e69cbd.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-8d4be85448f4.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-8d4be85448f4.jpg', '0-8d4be85448f4.jpg')" alt="0-8d4be85448f4.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-8d4be85448f4.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-8e1dc3edd802.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-8e1dc3edd802.jpg', '0-8e1dc3edd802.jpg')" alt="0-8e1dc3edd802.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-8e1dc3edd802.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-9364e31bc7b7.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-9364e31bc7b7.jpg', '0-9364e31bc7b7.jpg')" alt="0-9364e31bc7b7.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-9364e31bc7b7.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-966a7384d91d.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-966a7384d91d.jpg', '0-966a7384d91d.jpg')" alt="0-966a7384d91d.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-966a7384d91d.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-9af2cda012c5.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-9af2cda012c5.jpg', '0-9af2cda012c5.jpg')" alt="0-9af2cda012c5.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-9af2cda012c5.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-9dc04c30ea63.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-9dc04c30ea63.jpg', '0-9dc04c30ea63.jpg')" alt="0-9dc04c30ea63.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-9dc04c30ea63.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-9e3fa26672af.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-9e3fa26672af.jpg', '0-9e3fa26672af.jpg')" alt="0-9e3fa26672af.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-9e3fa26672af.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-9e9e095c5438.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-9e9e095c5438.jpg', '0-9e9e095c5438.jpg')" alt="0-9e9e095c5438.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-9e9e095c5438.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-a5f5093b1dca.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-a5f5093b1dca.jpg', '0-a5f5093b1dca.jpg')" alt="0-a5f5093b1dca.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-a5f5093b1dca.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-a88f56077403.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-a88f56077403.jpg', '0-a88f56077403.jpg')" alt="0-a88f56077403.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-a88f56077403.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-a93490ae3908.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-a93490ae3908.jpg', '0-a93490ae3908.jpg')" alt="0-a93490ae3908.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-a93490ae3908.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-aab36848ee4b.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-aab36848ee4b.jpg', '0-aab36848ee4b.jpg')" alt="0-aab36848ee4b.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-aab36848ee4b.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-c12661b98d6e.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-c12661b98d6e.jpg', '0-c12661b98d6e.jpg')" alt="0-c12661b98d6e.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-c12661b98d6e.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-c33f227b6e92.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-c33f227b6e92.jpg', '0-c33f227b6e92.jpg')" alt="0-c33f227b6e92.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-c33f227b6e92.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-c98515479ade.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-c98515479ade.jpg', '0-c98515479ade.jpg')" alt="0-c98515479ade.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-c98515479ade.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-d7299c73a57f.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-d7299c73a57f.jpg', '0-d7299c73a57f.jpg')" alt="0-d7299c73a57f.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-d7299c73a57f.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-d9ae02409273.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-d9ae02409273.jpg', '0-d9ae02409273.jpg')" alt="0-d9ae02409273.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-d9ae02409273.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-dbd0576b7136.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-dbd0576b7136.jpg', '0-dbd0576b7136.jpg')" alt="0-dbd0576b7136.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-dbd0576b7136.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-dd5004e99a37.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-dd5004e99a37.jpg', '0-dd5004e99a37.jpg')" alt="0-dd5004e99a37.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-dd5004e99a37.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-e386731daf3c.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-e386731daf3c.jpg', '0-e386731daf3c.jpg')" alt="0-e386731daf3c.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-e386731daf3c.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-ea5f8a2cd3cf.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-ea5f8a2cd3cf.jpg', '0-ea5f8a2cd3cf.jpg')" alt="0-ea5f8a2cd3cf.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-ea5f8a2cd3cf.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-eb39d07a12d6.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-eb39d07a12d6.jpg', '0-eb39d07a12d6.jpg')" alt="0-eb39d07a12d6.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-eb39d07a12d6.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-ec0b264ef89f.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-ec0b264ef89f.jpg', '0-ec0b264ef89f.jpg')" alt="0-ec0b264ef89f.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-ec0b264ef89f.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-f5041fb4dc39.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-f5041fb4dc39.jpg', '0-f5041fb4dc39.jpg')" alt="0-f5041fb4dc39.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-f5041fb4dc39.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-f5e648c6f711.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-f5e648c6f711.jpg', '0-f5e648c6f711.jpg')" alt="0-f5e648c6f711.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-f5e648c6f711.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-f9aaae33dcff.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-f9aaae33dcff.jpg', '0-f9aaae33dcff.jpg')" alt="0-f9aaae33dcff.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-f9aaae33dcff.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0-fd3c06569c04.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0-fd3c06569c04.jpg', '0-fd3c06569c04.jpg')" alt="0-fd3c06569c04.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-fd3c06569c04.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="HoatHinhAI 24-04/0.jpg" class="card-img-top gallery-img" onclick="showImage('HoatHinhAI 24-04/0.jpg', '0.jpg')" alt="0.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0.jpg</p>
+                </div>
+            </div>
+        </div>
+        
 </div>
-<div id="tab0" class="tabcontent">
-<div class="grid">
+<h2 class="folder-header mt-5 mb-4">📁 Phim Ngan Ngay 24-4 <small class="text-muted">(66 ảnh)</small></h2>
+<div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-4">
 
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_1.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>01.天价老卤：半碗剩汤干倒米其林饭店（34集）</p>
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-00bc73a00b7a.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-00bc73a00b7a.jpg', '0-00bc73a00b7a.jpg')" alt="0-00bc73a00b7a.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-00bc73a00b7a.jpg</p>
                 </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_2.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>02.切断管道后，全楼哭了（80集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="https://via.placeholder.com/200x300?text=No+Image">
-                    <div class="badges"></div>
-                    <p>03.人间岁岁胜仙年（67集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_4.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>04.拒载劳务队后我笑了（46集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_5.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>05.远嫁一程，执念一生（50集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_6.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>06.心更疼的时候（21集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_7.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>07.我撤单之后他悔疯了（36集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_8.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>08.我逃出十万大山（65集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_9.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>09.汀兰度流年（68集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_10.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>10.锦帐春深，肥婢为后（64集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_11.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>11.寒途向新生（79集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_12.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>12.闪婚娇妻是顶级千金（75集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_13.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>13.千亿身价装乞丐，被租回家当女友（60集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_14.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>14.穿越兽世，我开幼儿园成兽神（63集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_15.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>15.三百年等一声娘（32集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_16.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>16.白月光回京，首辅却只要我（30集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_17.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>17.执笔入画：暴君皇帝觉醒了（78集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_18.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>18.凤冠碎：嫡女休梦（28集）动漫</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_19.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>19.关于口碑这件事（63集）动漫</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_20.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>20.我只想喝鱼汤（60集）动漫</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_21.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>21.再世定乾坤（46集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="https://via.placeholder.com/200x300?text=No+Image">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>22.重生：只有我囤积了百亿物资（60集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="https://via.placeholder.com/200x300?text=No+Image">
-                    <div class="badges"></div>
-                    <p>23.最强大师兄：师妹越卷我越强（103集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_24.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>24.错嫁成欢（54集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_25.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>25.心有光亮自芬芳＆阿兹海默症的骗局（40集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_26.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>26.钞能力男友（28集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_27.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>27.穿越民国靠亿万大洋执掌北平（68集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_28.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>28.父女双坑，本郡主超旺家第二季（94集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_29.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>29.骗我投个好胎？行，你们别后悔第二季（78集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_30.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>30.纨绔郡主得宠日常（81集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_31.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>31.我在侯府当老六（58集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_32.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>32.误入女院当老师（30集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_33.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>33.至尊黑化系统，赐我无敌娶妻女帝（60集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_34.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>34(1).穿越荒年，我靠种田逆天改命(78集)</p>
-                </div>
-                
-                <div class="item">
-                    <img src="https://via.placeholder.com/200x300?text=No+Image">
-                    <div class="badges"></div>
-                    <p>34.穿越荒年，我靠种田逆天改命(78集)</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_36.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>35.惊悚凶宅（70集）动漫</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_37.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>36.八零暖妻：悔过老公宠上天（78集）动漫</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_38.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>37.大帝封魔&砍柴的都是大帝，你来退婚？（81集）动漫</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_39.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>38.朱笔勾缘（44集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_40.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>39.双生错位棋局（30集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_41.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>40.极阴龙婿（32集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_42.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>41.男友逼我放弃保研，我逆袭成顶尖医博（35集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_43.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>42.太子弃我后，我掌三军嫁侯府（43集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_44.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>43.天道金榜现世，我这假死帝尊藏不住了（41集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_45.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>44.我好像无敌了（53集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_46.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>45.重生巨妖：举国之力喂出无敌战神（33集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_47.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>46.长风渡明玥（55集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_48.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>47.弃女归来：我才是真锦鲤（32集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_49.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>48.离婚大作战（52集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/HoatHinhAI_50.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>49.赌约王妃（40集）Ai短剧</p>
-                </div>
-                </div></div>
-<div id="tab1" class="tabcontent">
-<div class="grid">
+            </div>
+        </div>
+        
 
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_1.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>01.天价老卤：半碗剩汤干倒米其林饭店（34集）</p>
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-03e41aaecc39.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-03e41aaecc39.jpg', '0-03e41aaecc39.jpg')" alt="0-03e41aaecc39.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-03e41aaecc39.jpg</p>
                 </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_2.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>02.切断管道后，全楼哭了（80集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_3.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>03.人间岁岁胜仙年（67集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_4.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>04.拒载劳务队后我笑了（46集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_5.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>05.远嫁一程，执念一生（50集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_6.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>06.心更疼的时候（21集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_7.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>07.我撤单之后他悔疯了（36集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_8.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>08.我逃出十万大山（65集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_9.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>09.汀兰度流年（68集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_10.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>10.锦帐春深，肥婢为后（64集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_11.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>11.寒途向新生（79集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_12.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>12.闪婚娇妻是顶级千金（75集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_13.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>13.千亿身价装乞丐，被租回家当女友（60集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_14.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>14.穿越兽世，我开幼儿园成兽神（63集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_15.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>15.三百年等一声娘（32集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_16.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>16.白月光回京，首辅却只要我（30集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_17.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>17.执笔入画：暴君皇帝觉醒了（78集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_18.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>18.凤冠碎：嫡女休梦（28集）动漫</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_19.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>19.关于口碑这件事（63集）动漫</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_20.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>20.我只想喝鱼汤（60集）动漫</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_21.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>21.再世定乾坤（46集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_22.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>22.重生：只有我囤积了百亿物资（60集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_23.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>23.最强大师兄：师妹越卷我越强（103集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_24.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>24.错嫁成欢（54集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_25.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>25.心有光亮自芬芳＆阿兹海默症的骗局（40集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_26.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>26.钞能力男友（28集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_27.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>27.穿越民国靠亿万大洋执掌北平（68集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_28.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>28.父女双坑，本郡主超旺家第二季（94集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_29.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>29.骗我投个好胎？行，你们别后悔第二季（78集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_30.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>30.纨绔郡主得宠日常（81集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_31.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>31.我在侯府当老六（58集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_32.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>32.误入女院当老师（30集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_33.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>33.至尊黑化系统，赐我无敌娶妻女帝（60集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_34.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>34(1).穿越荒年，我靠种田逆天改命(78集)</p>
-                </div>
-                
-                <div class="item">
-                    <img src="https://via.placeholder.com/200x300?text=No+Image">
-                    <div class="badges"></div>
-                    <p>34.穿越荒年，我靠种田逆天改命(78集)</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_36.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>35.惊悚凶宅（70集）动漫</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_37.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>36.八零暖妻：悔过老公宠上天（78集）动漫</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_38.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>37.大帝封魔&砍柴的都是大帝，你来退婚？（81集）动漫</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_39.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>38.朱笔勾缘（44集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_40.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>39.双生错位棋局（30集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_41.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>40.极阴龙婿（32集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_42.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>41.男友逼我放弃保研，我逆袭成顶尖医博（35集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_43.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>42.太子弃我后，我掌三军嫁侯府（43集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_44.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>43.天道金榜现世，我这假死帝尊藏不住了（41集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_45.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>44.我好像无敌了（53集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_46.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>45.重生巨妖：举国之力喂出无敌战神（33集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_47.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>46.长风渡明玥（55集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_48.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>47.弃女归来：我才是真锦鲤（32集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_49.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>48.离婚大作战（52集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_50.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>49.赌约王妃（40集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_51.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>50.凤鸣定乾坤（66集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_52.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>51.落冤（80集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_53.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>52.这一次我偏不让（52集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_54.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>53.真千金她嘴开过光（55集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_55.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>54.契约王妃（38集）Ai短剧</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_56.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>55.重生之侯门嫡母（100集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_57.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>56.农门福星（81集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_58.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>57.请个保姆，赔了全家（72集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_59.jpg">
-                    <div class="badges"><span class="badge ngang">NGANG</span></div>
-                    <p>58.锦庭重暖青禾（23集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_60.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>59.嫡女惊华：烈骨成尘（62集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_61.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>60.全京城都知道，那对父女是双坑第二季（60集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHangNgay_62.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>61.占有玫瑰（60集）</p>
-                </div>
-                </div></div>
-<div id="tab2" class="tabcontent">
-<div class="grid">
+            </div>
+        </div>
+        
 
-                <div class="item">
-                    <img src="thumbs/PhimHot_1.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>01.一心想离婚，少夫人她不好惹（66集）乔佳乐＆雷馥缦</p>
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-0fcd1799df25.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-0fcd1799df25.jpg', '0-0fcd1799df25.jpg')" alt="0-0fcd1799df25.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-0fcd1799df25.jpg</p>
                 </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHot_2.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>02.早逝白月光不续前缘，皇帝他急了（68集）刘润铭＆朱小雪</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHot_3.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>03.晚风吻过你（80集）谢鸿鑫＆郑晨雨</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHot_4.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>04.予你璀璨星河（63集）叶皓然＆舒畅</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHot_5.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>05.阴差阳错，成了乖崽的奶娘（69集）王朝阳＆赵由美</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHot_6.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>06.婚既钟情，春山可望（91集）王奕然&汪海敏</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHot_7.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>07.不祭罗裙祭烽火（70集）李若洵&翟一莹</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHot_8.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>08.重生主母，专治不服（61集）明川＆钟熙</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHot_9.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>一心想离婚，少夫人她不好惹    共66集</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHot_10.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>不祭罗裙祭烽火    共70集</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHot_11.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>予你璀璨星河    共63集</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHot_12.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>仵作娘子要嫁人     共62集</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHot_13.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>婆媳联手，侯府搬空    共60集</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHot_14.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>撩汉日常：穿书90，东北悍妻带全家炫肉    共64集</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHot_15.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>早逝白月光不续前缘，皇帝他急了    共68集</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHot_16.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>晚风吻过你     共80集</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHot_17.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>热恋，从新婚开始45集（全91集）</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHot_18.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>秦爷夫人又孕吐了     共77集</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHot_19.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>红绳绑了只外星喵     共59集</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHot_20.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>说好假结婚霍总怎么动真格了    共79集</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHot_21.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>越界相爱：失忆认错老公出走了    共57集</p>
-                </div>
-                
-                <div class="item">
-                    <img src="thumbs/PhimHot_22.jpg">
-                    <div class="badges"><span class="badge dọc">DỌC</span></div>
-                    <p>阴差阳错，成了乖崽的奶娘    共69集</p>
-                </div>
-                </div></div>
+            </div>
+        </div>
+        
 
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-10db303188a8.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-10db303188a8.jpg', '0-10db303188a8.jpg')" alt="0-10db303188a8.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-10db303188a8.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-113de2517b51.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-113de2517b51.jpg', '0-113de2517b51.jpg')" alt="0-113de2517b51.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-113de2517b51.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-11711daa7027.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-11711daa7027.jpg', '0-11711daa7027.jpg')" alt="0-11711daa7027.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-11711daa7027.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-18c21cc6aff5.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-18c21cc6aff5.jpg', '0-18c21cc6aff5.jpg')" alt="0-18c21cc6aff5.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-18c21cc6aff5.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-22c31a3ecd24.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-22c31a3ecd24.jpg', '0-22c31a3ecd24.jpg')" alt="0-22c31a3ecd24.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-22c31a3ecd24.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-2a973a50da5a.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-2a973a50da5a.jpg', '0-2a973a50da5a.jpg')" alt="0-2a973a50da5a.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-2a973a50da5a.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-2d88dae13ac7.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-2d88dae13ac7.jpg', '0-2d88dae13ac7.jpg')" alt="0-2d88dae13ac7.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-2d88dae13ac7.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-30037cc9edc7.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-30037cc9edc7.jpg', '0-30037cc9edc7.jpg')" alt="0-30037cc9edc7.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-30037cc9edc7.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-352f184e0761.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-352f184e0761.jpg', '0-352f184e0761.jpg')" alt="0-352f184e0761.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-352f184e0761.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-36cd78c71d56.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-36cd78c71d56.jpg', '0-36cd78c71d56.jpg')" alt="0-36cd78c71d56.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-36cd78c71d56.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-373ff09f4346.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-373ff09f4346.jpg', '0-373ff09f4346.jpg')" alt="0-373ff09f4346.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-373ff09f4346.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-4a975c1c1012.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-4a975c1c1012.jpg', '0-4a975c1c1012.jpg')" alt="0-4a975c1c1012.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-4a975c1c1012.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-4f7cb3744a77.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-4f7cb3744a77.jpg', '0-4f7cb3744a77.jpg')" alt="0-4f7cb3744a77.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-4f7cb3744a77.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-4fa2df24c88f.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-4fa2df24c88f.jpg', '0-4fa2df24c88f.jpg')" alt="0-4fa2df24c88f.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-4fa2df24c88f.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-547b777a9652.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-547b777a9652.jpg', '0-547b777a9652.jpg')" alt="0-547b777a9652.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-547b777a9652.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-55175a1b3d9d.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-55175a1b3d9d.jpg', '0-55175a1b3d9d.jpg')" alt="0-55175a1b3d9d.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-55175a1b3d9d.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-575baac84afa.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-575baac84afa.jpg', '0-575baac84afa.jpg')" alt="0-575baac84afa.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-575baac84afa.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-5d63c27c6743.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-5d63c27c6743.jpg', '0-5d63c27c6743.jpg')" alt="0-5d63c27c6743.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-5d63c27c6743.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-5d87ef90412f.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-5d87ef90412f.jpg', '0-5d87ef90412f.jpg')" alt="0-5d87ef90412f.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-5d87ef90412f.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-5e8855a426a7.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-5e8855a426a7.jpg', '0-5e8855a426a7.jpg')" alt="0-5e8855a426a7.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-5e8855a426a7.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-656679fe9a6f.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-656679fe9a6f.jpg', '0-656679fe9a6f.jpg')" alt="0-656679fe9a6f.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-656679fe9a6f.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-659db8f67279.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-659db8f67279.jpg', '0-659db8f67279.jpg')" alt="0-659db8f67279.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-659db8f67279.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-696fb52c3087.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-696fb52c3087.jpg', '0-696fb52c3087.jpg')" alt="0-696fb52c3087.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-696fb52c3087.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-6991c73e20b5.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-6991c73e20b5.jpg', '0-6991c73e20b5.jpg')" alt="0-6991c73e20b5.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-6991c73e20b5.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-6a0acdfc92df.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-6a0acdfc92df.jpg', '0-6a0acdfc92df.jpg')" alt="0-6a0acdfc92df.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-6a0acdfc92df.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-6cd46be786ee.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-6cd46be786ee.jpg', '0-6cd46be786ee.jpg')" alt="0-6cd46be786ee.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-6cd46be786ee.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-6d42b6ae5f88.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-6d42b6ae5f88.jpg', '0-6d42b6ae5f88.jpg')" alt="0-6d42b6ae5f88.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-6d42b6ae5f88.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-6e24b19d0d6e.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-6e24b19d0d6e.jpg', '0-6e24b19d0d6e.jpg')" alt="0-6e24b19d0d6e.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-6e24b19d0d6e.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-6ecbf00c2528.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-6ecbf00c2528.jpg', '0-6ecbf00c2528.jpg')" alt="0-6ecbf00c2528.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-6ecbf00c2528.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-6f7a313d7459.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-6f7a313d7459.jpg', '0-6f7a313d7459.jpg')" alt="0-6f7a313d7459.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-6f7a313d7459.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-7cfe748e88ae.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-7cfe748e88ae.jpg', '0-7cfe748e88ae.jpg')" alt="0-7cfe748e88ae.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-7cfe748e88ae.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-87ca5730203c.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-87ca5730203c.jpg', '0-87ca5730203c.jpg')" alt="0-87ca5730203c.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-87ca5730203c.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-88d1862751f4.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-88d1862751f4.jpg', '0-88d1862751f4.jpg')" alt="0-88d1862751f4.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-88d1862751f4.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-8a97d097a66d.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-8a97d097a66d.jpg', '0-8a97d097a66d.jpg')" alt="0-8a97d097a66d.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-8a97d097a66d.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-8fe863aeac69.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-8fe863aeac69.jpg', '0-8fe863aeac69.jpg')" alt="0-8fe863aeac69.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-8fe863aeac69.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-94f7b7a96420.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-94f7b7a96420.jpg', '0-94f7b7a96420.jpg')" alt="0-94f7b7a96420.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-94f7b7a96420.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-9a1e96cd9d90.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-9a1e96cd9d90.jpg', '0-9a1e96cd9d90.jpg')" alt="0-9a1e96cd9d90.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-9a1e96cd9d90.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-a00af4809507.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-a00af4809507.jpg', '0-a00af4809507.jpg')" alt="0-a00af4809507.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-a00af4809507.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-af285945cd6f.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-af285945cd6f.jpg', '0-af285945cd6f.jpg')" alt="0-af285945cd6f.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-af285945cd6f.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-b0b879dad148.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-b0b879dad148.jpg', '0-b0b879dad148.jpg')" alt="0-b0b879dad148.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-b0b879dad148.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-b4b1abd0a5b0.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-b4b1abd0a5b0.jpg', '0-b4b1abd0a5b0.jpg')" alt="0-b4b1abd0a5b0.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-b4b1abd0a5b0.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-b82ff38d23c7.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-b82ff38d23c7.jpg', '0-b82ff38d23c7.jpg')" alt="0-b82ff38d23c7.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-b82ff38d23c7.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-b8606769541a.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-b8606769541a.jpg', '0-b8606769541a.jpg')" alt="0-b8606769541a.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-b8606769541a.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-bc1629a520cf.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-bc1629a520cf.jpg', '0-bc1629a520cf.jpg')" alt="0-bc1629a520cf.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-bc1629a520cf.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-c82b027fe3ce.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-c82b027fe3ce.jpg', '0-c82b027fe3ce.jpg')" alt="0-c82b027fe3ce.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-c82b027fe3ce.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-cce49f08085f.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-cce49f08085f.jpg', '0-cce49f08085f.jpg')" alt="0-cce49f08085f.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-cce49f08085f.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-ced769ef774c.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-ced769ef774c.jpg', '0-ced769ef774c.jpg')" alt="0-ced769ef774c.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-ced769ef774c.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-d0b87fd18a5a.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-d0b87fd18a5a.jpg', '0-d0b87fd18a5a.jpg')" alt="0-d0b87fd18a5a.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-d0b87fd18a5a.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-d35c17091ebe.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-d35c17091ebe.jpg', '0-d35c17091ebe.jpg')" alt="0-d35c17091ebe.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-d35c17091ebe.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-d5d1f01b1698.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-d5d1f01b1698.jpg', '0-d5d1f01b1698.jpg')" alt="0-d5d1f01b1698.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-d5d1f01b1698.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-d7dd47625d32.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-d7dd47625d32.jpg', '0-d7dd47625d32.jpg')" alt="0-d7dd47625d32.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-d7dd47625d32.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-d9d99e5ab7e3.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-d9d99e5ab7e3.jpg', '0-d9d99e5ab7e3.jpg')" alt="0-d9d99e5ab7e3.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-d9d99e5ab7e3.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-e365490a69f2.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-e365490a69f2.jpg', '0-e365490a69f2.jpg')" alt="0-e365490a69f2.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-e365490a69f2.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-e53dc7a846ee.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-e53dc7a846ee.jpg', '0-e53dc7a846ee.jpg')" alt="0-e53dc7a846ee.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-e53dc7a846ee.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-e9375e859060.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-e9375e859060.jpg', '0-e9375e859060.jpg')" alt="0-e9375e859060.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-e9375e859060.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-f3662d98d6a1.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-f3662d98d6a1.jpg', '0-f3662d98d6a1.jpg')" alt="0-f3662d98d6a1.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-f3662d98d6a1.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-f3866a58319d.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-f3866a58319d.jpg', '0-f3866a58319d.jpg')" alt="0-f3866a58319d.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-f3866a58319d.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-f6a5a868a2cf.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-f6a5a868a2cf.jpg', '0-f6a5a868a2cf.jpg')" alt="0-f6a5a868a2cf.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-f6a5a868a2cf.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-f9c850d9902f.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-f9c850d9902f.jpg', '0-f9c850d9902f.jpg')" alt="0-f9c850d9902f.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-f9c850d9902f.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-fc8fe55d2bbe.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-fc8fe55d2bbe.jpg', '0-fc8fe55d2bbe.jpg')" alt="0-fc8fe55d2bbe.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-fc8fe55d2bbe.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-fd902d7bdef3.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-fd902d7bdef3.jpg', '0-fd902d7bdef3.jpg')" alt="0-fd902d7bdef3.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-fd902d7bdef3.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0-fdb02fb30329.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0-fdb02fb30329.jpg', '0-fdb02fb30329.jpg')" alt="0-fdb02fb30329.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-fdb02fb30329.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="Phim Ngan Ngay 24-4/0.jpg" class="card-img-top gallery-img" onclick="showImage('Phim Ngan Ngay 24-4/0.jpg', '0.jpg')" alt="0.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+</div>
+<h2 class="folder-header mt-5 mb-4">📁 PhimHot 25-04 <small class="text-muted">(7 ảnh)</small></h2>
+<div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-4">
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="PhimHot 25-04/0-4efae55998b7.jpg" class="card-img-top gallery-img" onclick="showImage('PhimHot 25-04/0-4efae55998b7.jpg', '0-4efae55998b7.jpg')" alt="0-4efae55998b7.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-4efae55998b7.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="PhimHot 25-04/0-c0d93867ab24.jpg" class="card-img-top gallery-img" onclick="showImage('PhimHot 25-04/0-c0d93867ab24.jpg', '0-c0d93867ab24.jpg')" alt="0-c0d93867ab24.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-c0d93867ab24.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="PhimHot 25-04/0-d0204195d799.jpg" class="card-img-top gallery-img" onclick="showImage('PhimHot 25-04/0-d0204195d799.jpg', '0-d0204195d799.jpg')" alt="0-d0204195d799.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-d0204195d799.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="PhimHot 25-04/0-eb66ffe7c2b6.jpg" class="card-img-top gallery-img" onclick="showImage('PhimHot 25-04/0-eb66ffe7c2b6.jpg', '0-eb66ffe7c2b6.jpg')" alt="0-eb66ffe7c2b6.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-eb66ffe7c2b6.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="PhimHot 25-04/0-ef374e2fa660.jpg" class="card-img-top gallery-img" onclick="showImage('PhimHot 25-04/0-ef374e2fa660.jpg', '0-ef374e2fa660.jpg')" alt="0-ef374e2fa660.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-ef374e2fa660.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="PhimHot 25-04/0-f958dc31bb05.jpg" class="card-img-top gallery-img" onclick="showImage('PhimHot 25-04/0-f958dc31bb05.jpg', '0-f958dc31bb05.jpg')" alt="0-f958dc31bb05.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0-f958dc31bb05.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <img src="PhimHot 25-04/0.jpg" class="card-img-top gallery-img" onclick="showImage('PhimHot 25-04/0.jpg', '0.jpg')" alt="0.jpg">
+                <div class="card-body p-3">
+                    <p class="card-text text-truncate small mb-0 text-center">0.jpg</p>
+                </div>
+            </div>
+        </div>
+        
+</div>
+
+    </div>
+
+    <!-- Modal xem ảnh lớn -->
+    <div class="modal fade" id="imageModal" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-2 text-center bg-dark">
+                    <img id="modalImage" class="img-fluid" style="max-height: 85vh;" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showImage(src, filename) {
+            const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+            document.getElementById('modalImage').src = src;
+            document.getElementById('modalTitle').textContent = filename;
+            modal.show();
+        }
+    </script>
 </body>
 </html>
